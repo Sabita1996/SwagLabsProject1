@@ -28,9 +28,14 @@ public class Verify_Multiple_Credentials_Test extends TestBase
     	return new Object[][]
     			{
     		         {"standard_user","secret_sauce"},//Corr Ur/Corr Pass
-    		         {"standard_user1","secret_sauce"},//inCorr Ur/Corr Pass
-    		         {"standard_user","secret_sauce1"},//Corr Ur/inCorr Pass
-    		         {"standard_user1","secret_sauce1"}//inCorr Ur/inCorr Pass
+			 {"locked_out_user","secret_sauce"},
+		         {"problem_user","secret_sauce"},
+		         {"performance_glitch_user","secret_sauce"},
+		         {"error_user","secret_sauce"},
+		         {"visual_user","secret_sauce"}	
+    		         //{"standard_user1","secret_sauce"},//inCorr Ur/Corr Pass
+    		         //{"standard_user","secret_sauce1"},//Corr Ur/inCorr Pass
+    		         //{"standard_user1","secret_sauce1"}//inCorr Ur/inCorr Pass
     		         
     			};
     			 //{"locked_out_user","secret_sauce"},
